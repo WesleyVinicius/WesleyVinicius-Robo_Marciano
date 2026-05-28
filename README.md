@@ -19,18 +19,3 @@ Para atender aos critérios de qualidade e robustez do código, o projeto faz us
 * **Sobrecarga de Métodos (Overload):** Múltiplas assinaturas para a função `responda()`, permitindo que o sistema diferencie entradas de texto de requisições matemáticas com base nos parâmetros recebidos.
 * **Sobrescrita (Override):** Modificação do comportamento da função principal na classe Premium, com o uso de chamadas `super` para delegar tratativas que não pertencem ao escopo da classe atual.
 * **Interfaces e Injeção de Dependência:** Uso da interface `AcaoPersonalizada` como um contrato rígido, permitindo que a versão Premium execute rotinas externas (como interações com banco de dados ou APIs) sem conhecer a implementação interna dessas ações.
-
-## Como Executar
-
-Este projeto foi construído para rodar em terminais interativos (para permitir o uso da classe `java.util.Scanner`).
-
-**Pré-requisitos:**
-* [JDK](https://www.oracle.com/java/technologies/downloads/) instalado (versão 8 ou superior).
-* Compilador Kotlin (`kotlinc`).
-
-**Passo a passo (Terminal Local):**
-1. Clone este repositório.
-2. Navegue até a pasta do projeto.
-3. Compile o arquivo executando:
-   ```bash
-   kotlinc RoboMarciano.kt -include-runtime -d RoboMarciano.jar
